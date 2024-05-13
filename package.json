@@ -1,0 +1,40 @@
+{
+  "name": "@pwc3/app-store-reviews",
+  "version": "1.0.0",
+  "description": "Exports Apple App Store reviews to tab-delimited text format",
+  "keywords": [],
+  "type": "module",
+  "main": "./dist/main.js",
+  "types": "./dist/main.d.ts",
+  "bin": {
+    "app-store-reviews": "./dist/main.js"
+  },
+  "scripts": {
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "tsc": "tsc",
+    "check": "eslint src ; tsc",
+    "build": "tsup",
+    "clean": "rm -rf ./dist;"
+  },
+  "author": "Paul Calnan",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "@typescript-eslint/parser": "^7.8.0",
+    "eslint": "^8",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.0.2",
+    "tsx": "^4.10.1",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@commander-js/extra-typings": "^12.0.1",
+    "commander": "^12.0.0"
+  }
+}
